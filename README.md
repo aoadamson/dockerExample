@@ -1,1 +1,3 @@
 # dockerExample
+
+![construction](readmeimage.jpg)

@@ -1,0 +1,11 @@
+docker run -d --name dev-postgres -e POSTGRES_PASSWORD=Pass2020! -v ${HOME}/postgres-data/:/var/lib/postgresql/data -p 5432:5432 postgres
+docker exec -it dev-postgres bash
+psql -h localhost -U postgres
+\l
+create schema [db_schema_name]
+create table [table_name] ([field_names] [values])
+
+
+DockerKILLLLLL:
+
+https://gist.github.com/evanscottgray/8571828
