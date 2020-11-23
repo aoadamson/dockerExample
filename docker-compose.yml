@@ -1,11 +1,11 @@
 version: '3'
 services:
   database:
-    image: "postgres" # use latest official postgres version
-    env_file:
-      - database.env # configure postgres
-    volumes:
-      - database-data:/var/lib/postgresql/data/ # persist data even if container shuts down
+    image: "austin" # use latest official postgres version
+
+#    volumes:
+#      - ./postgressnap:/docker-entrypoint-initdb.d
+#      - database-data:/var/lib/postgresql/data/ # persist data even if container shuts down
     ports:
       - "127.0.0.1:5432:5432"
 volumes:
