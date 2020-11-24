@@ -1,9 +1,9 @@
-from controllers.docker_select import dockerSelect
+from controllers.docker_select import docker_select
 import unittest
 
 
 class DockerSelect(unittest.TestCase):
 
     def test_docker_select(self):
-        result = dockerSelect()
+        result = docker_select()
         self.assertEqual(result, [('Austin',)])

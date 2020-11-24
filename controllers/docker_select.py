@@ -1,6 +1,7 @@
 from services.connect_to_db import connect_to_db
 
-def dockerSelect():
+
+def docker_select():
     table_select = "SELECT * FROM films;"
 
     names = []

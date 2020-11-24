@@ -1,3 +1,3 @@
-from controllers.docker_select import dockerSelect
+from controllers.docker_select import docker_select
 
-print(dockerSelect())
+print(docker_select())
